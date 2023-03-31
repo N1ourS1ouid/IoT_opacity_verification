@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+    <net id="n-1808-86C6A-0" type="http://www.pnml.org/version-2009/grammar/ptnet">
+        <page id="g-1808-86C77-1">
+            <place id="Pint">
+                <initialMarking>1</initialMarking>
+            </place>
+            <place id="Pfin">
+                <initialMarking>3</initialMarking>
+            </place>
+            <place id="Pacffe196.d6489">
+                <initialMarking>0</initialMarking>
+            </place>
+            <place id="msg1">
+                <initialMarking>0</initialMarking>
+            </place>
+            <place id="msg2">
+                <initialMarking>0</initialMarking>
+            </place>
+            <place id="msg3">
+                <initialMarking>0</initialMarking>
+            </place>
+            <place id="Pinject0">
+                <initialMarking>0</initialMarking>
+            </place>
+            <transition id="Tbig" />
+            <transition id="Tacffe196.d6489" />
+            <transition id="Tfunc9a799393.456440" />
+            <transition id="Tfunc9a799393.456441" />
+            <transition id="Tfunc9a799393.456442" />
+            <transition id="T9370a399.66895" />
+            <transition id="Tb7c90bc3.e0f768" />
+            <transition id="Ta444cd02.56a98" />
+            <arc id="E1" target="Tbig" source="Pint" />
+            <arc id="E0" target="Pacffe196.d6489" source="Tbig" />
+            <arc id="E20" target="Tacffe196.d6489" source="Pacffe196.d6489" />
+            <arc id="ET11" target="msg1" source="Tfunc9a799393.456440" />
+            <arc id="ET12" target="msg2" source="Tfunc9a799393.456441" />
+            <arc id="ET11" target="msg1" source="Tfunc9a799393.456442" />
+            <arc id="ET12" target="msg2" source="Tfunc9a799393.456442" />
+            <arc id="ET13" target="msg3" source="Tfunc9a799393.456442" />
+            <arc id="E2" target="Pfin" source="T9370a399.66895" />
+            <arc id="E3" target="Pfin" source="Tb7c90bc3.e0f768" />
+            <arc id="E4" target="Pfin" source="Ta444cd02.56a98" />
+            <arc id="Einject0" target="Pinject0" source="acffe196.d6489" />
+            <arc id="Efonction0" target="9370a399.66895" source="msg0" />
+            <arc id="Efonction1" target="b7c90bc3.e0f768" source="msg1" />
+            <arc id="Efonction2" target="a444cd02.56a98" source="msg2" />
+        </page>
+    </net>
+</pnml>

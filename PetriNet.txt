@@ -1,0 +1,196 @@
+< ? xml version = "1.0" encoding = "utf-8" ? >
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="ERK - PT - 000001" type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<page id = "page0">
+			<name><text>DefaultPage< / text>< / name>
+			<place id ="Pint">
+				<name><text>Pint< / text>< / name>
+				<initialMarking> < text>1</text></initialMarking>
+			< / place>
+			<place id ="Pfin">
+				<name><text>Pfin< / text>< / name>
+				<initialMarking> < text>2</text></initialMarking>
+			< / place>
+			<place id ="ebcfe096.3c659">
+				<name><text>P0< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="msg1">
+				<name><text>msg1< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="msg2">
+				<name><text>msg2< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="4c6b6a78.fbbdf4">
+				<name><text>4c6b6a78.fbbdf4< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="b4">
+				<name><text>b4< / text>< / name>
+				<initialMarking> < text>1</text></initialMarking>
+			< / place>
+			<place id ="msg1">
+				<name><text>msg1< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="b7102979.caca88">
+				<name><text>P6< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="msg1">
+				<name><text>msg1< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="msg2">
+				<name><text>msg2< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="5d12d07a.73068">
+				<name><text>5d12d07a.73068< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="b9">
+				<name><text>b9< / text>< / name>
+				<initialMarking> < text>1</text></initialMarking>
+			< / place>
+			<place id ="9f4732eb.f2fc2">
+				<name><text>9f4732eb.f2fc2< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="b10">
+				<name><text>b10< / text>< / name>
+				<initialMarking> < text>1</text></initialMarking>
+			< / place>
+			<place id ="Pinject0">
+				<name><text>Pinject0< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="Pinject6">
+				<name><text>Pinject6< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<transition id = "Tbig" > 
+				<name><text>Tbig< / text>< / name>
+			< / transition>
+			<transition id = "ebcfe096.3c659" > 
+				<name><text>T0< / text>< / name>
+			< / transition>
+			<transition id = "8aac19fd.6e2fe8" > 
+				<name><text>T1< / text>< / name>
+			< / transition>
+			<transition id = "f1d5051f.d2ed480" > 
+				<name><text>T30< / text>< / name>
+			< / transition>
+			<transition id = "f1d5051f.d2ed481" > 
+				<name><text>T31< / text>< / name>
+			< / transition>
+			<transition id = "4c6b6a78.fbbdf4" > 
+				<name><text>4c6b6a78.fbbdf4< / text>< / name>
+			< / transition>
+			<transition id = "81780681.ac7de80" > 
+				<name><text>T50< / text>< / name>
+			< / transition>
+			<transition id = "b7102979.caca88" > 
+				<name><text>T6< / text>< / name>
+			< / transition>
+			<transition id = "4381e56b.62a7fc" > 
+				<name><text>T7< / text>< / name>
+			< / transition>
+			<transition id = "707dea66.a169540" > 
+				<name><text>T80< / text>< / name>
+			< / transition>
+			<transition id = "707dea66.a169541" > 
+				<name><text>T81< / text>< / name>
+			< / transition>
+			<transition id = "5d12d07a.73068" > 
+				<name><text>5d12d07a.73068< / text>< / name>
+			< / transition>
+			<transition id = "9f4732eb.f2fc2" > 
+				<name><text>9f4732eb.f2fc2< / text>< / name>
+			< / transition>
+			<arc id = "E1" source = "Pint" target = "Tbig" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E0" source = "Tbig" target = "ebcfe096.3c659" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E20" source = "ebcfe096.3c659" target = "ebcfe096.3c659" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E1" source = "8aac19fd.6e2fe8" target = "Pfin" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "ET32" source = "f1d5051f.d2ed483" target = "msg2" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "ET31" source = "f1d5051f.d2ed483" target = "msg1" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E14" source = "4c6b6a78.fbbdf4" target = "4c6b6a78.fbbdf4" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E24" source = "4c6b6a78.fbbdf4" target = "b4" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "ET51" source = "81780681.ac7de85" target = "msg" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E6" source = "Tbig" target = "b7102979.caca88" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E26" source = "b7102979.caca88" target = "b7102979.caca88" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E7" source = "4381e56b.62a7fc" target = "Pfin" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "ET82" source = "707dea66.a169548" target = "msg2" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "ET81" source = "707dea66.a169548" target = "msg1" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E19" source = "5d12d07a.73068" target = "5d12d07a.73068" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E29" source = "5d12d07a.73068" target = "b9" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E110" source = "9f4732eb.f2fc2" target = "9f4732eb.f2fc2" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E210" source = "b10" target = "9f4732eb.f2fc2" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Einject0" source = "ebcfe096.3c659" target = "Pinject0" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Einject0" source = "Pinject0" target = "ebcfe096.3c659" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Efonction0" source = "msg0" target = "8aac19fd.6e2fe8" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Efonction1" source = "msg1" target = "4c6b6a78.fbbdf4" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Efonction" source = "81780681.ac7de8" target = "f1d5051f.d2ed48" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Einject6" source = "b7102979.caca88" target = "Pinject6" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Einject0" source = "Pinject0" target = "5d12d07a.73068" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Efonction0" source = "msg0" target = "4381e56b.62a7fc" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Efonction1" source = "msg1" target = "4c6b6a78.fbbdf4" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+		< / page>
+	<name><text>ERK - PT - 000001 < / text > < / name>< / net>
+< / pnml>

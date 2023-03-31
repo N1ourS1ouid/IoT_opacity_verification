@@ -1,0 +1,60 @@
+for (int i = 0; i < L.size(); i++)
+		{
+			if ((VerifType(L[i], "function")) && ((Nombrereturn(ReturnCode(L[i])) > 1)))
+			{
+				string pay = root[k]["payload"].asCString();
+				string s = ReturnCode(L[i]);
+				vector<string> Q = Positionif(s);
+				for (int j = 0; j < Q.size(); j++)
+				{
+					if (Q[j] == "msg.payload==" +pay)
+					{
+						petrinet.Edges.push_back(Edge("Einject" + to_string(k) + to_string(j), "Pinject" + to_string(k), root[i]["id"].asCString() + to_string(j), 1));
+					}
+				}
+
+			}
+			else if ((VerifType(L[i], "function")) && ((Nombrereturn(ReturnCode(L[i])) == 1)))
+			{
+				petrinet.Edges.push_back(Edge("Einject" + to_string(k), "Pinject" + to_string(k), root[i]["id"].asCString(), 1));
+			}
+			else if ((VerifType(L[i], "mysql") || (VerifType(L[i], "MySQLdatabase"))))
+			{
+				for (int v = 0; v < root.size(); v++)
+				{
+					if (root[v]["id"].asCString() == L[i])
+					{
+						string c = root[3]["wires"].toStyledString();
+						vector <string> v;
+						for (int i = 0; i < listevoisin(c).size(); i++)
+						{
+							v.push_back(listevoisin(c)[i]);
+						}
+						Relier(k, petrinet, v);
+					}
+
+				}
+
+			}
+			else
+			{
+				petrinet.Edges.push_back(Edge("Einject" + to_string(k), "Pinject" + to_string(k), L[0], 1));
+			}
+		}
+
+	}
+	else if (root[k]["type"].asCString() == "function")
+	{
+		string ch = ReturnCode(root[k]["func"].asCString());
+		if (Nombrereturn(ch) > 1)
+		{
+			for (int i = 0; i < L.size(); i++)
+			{
+				petrinet.Edges.push_back(Edge("Efonction" + to_string(i), "msg" + to_string(i), L[i], 1));
+			}
+
+		}
+		else
+		{
+			petrinet.Edges.push_back(Edge("Efonction", root[k]["id"].asCString(), L[0], 1));
+		}*/

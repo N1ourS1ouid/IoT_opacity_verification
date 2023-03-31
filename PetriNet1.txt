@@ -1,0 +1,64 @@
+< ? xml version = "1.0" encoding = "utf-8" ? >
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="ERK - PT - 000001" type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<page id = "page0">
+			<name><text>DefaultPage< / text>< / name>
+			<place id ="P0">
+				<name><text>P0< / text>< / name>
+				<initialMarking> < text>1</text></initialMarking>
+			< / place>
+			<place id ="Pfin">
+				<name><text>Pfin< / text>< / name>
+				<initialMarking> < text>1</text></initialMarking>
+			< / place>
+			<place id ="Pd7f50df5.9285c">
+				<name><text>Pd7f50df5.9285c< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="msg11">
+				<name><text>msg1< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<place id ="P10">
+				<name><text>P10< / text>< / name>
+				<initialMarking> < text>0</text></initialMarking>
+			< / place>
+			<transition id = "Tbig" > 
+				<name><text>Tbig< / text>< / name>
+			< / transition>
+			<transition id = "Td7f50df5.9285c" > 
+				<name><text>Td7f50df5.9285c?< / text>< / name>
+			< / transition>
+			<transition id = "T94181302.7d0770" > 
+				<name><text>T10< / text>< / name>
+			< / transition>
+			<transition id = "Tc046acfe.ad068" > 
+				<name><text>Tc046acfe.ad068!< / text>< / name>
+			< / transition>
+			<arc id = "E1" source = "P0" target = "Tbig" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E00" source = "Tbig" target = "Pd7f50df5.9285c" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E10" source = "Pd7f50df5.9285c" target = "Td7f50df5.9285c" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "ET10" source = "T94181302.7d0770" target = "msg11" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "E13" source = "Tc046acfe.ad068" target = "Pfin" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Elink in0" source = "Td7f50df5.9285c" target = "P10" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Elink in00" source = "P10" target = "T94181302.7d0770" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+			<arc id = "Efonction1" source = "msg11" target = "Tc046acfe.ad068" > 
+				<inscription> < text>1< / text > < / inscription>
+			< / arc>
+		< / page>
+</net>
+< / pnml>
